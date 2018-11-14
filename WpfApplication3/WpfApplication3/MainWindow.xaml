@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApplication3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="374" Width="731.125">
+    <Grid>
+        <Label x:Name="label" Content="Costumers database" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="289" Margin="0,11,11,0" Stroke="Black" VerticalAlignment="Top" Width="219"/>
+        <Label x:Name="label1" Content="Add costumer:" HorizontalAlignment="Right" Margin="0,20,134,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Name" HorizontalAlignment="Right" Margin="0,51,137,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="label1_Copy1" Content="Lastname" HorizontalAlignment="Right" Margin="0,82,135,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="label1_Copy2" Content="Patronymic" HorizontalAlignment="Right" Margin="0,113,135,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="label1_Copy3" Content="Addres" HorizontalAlignment="Right" Margin="0,144,135,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="label1_Copy4" Content="Phone" HorizontalAlignment="Right" Margin="0,175,135,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="label1_Copy5" Content="Card number" HorizontalAlignment="Right" Margin="0,206,135,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Label x:Name="label1_Copy6" Content="Bank acc. num" HorizontalAlignment="Right" Margin="0,237,135,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="tbfn" HorizontalAlignment="Right" Height="26" Margin="0,51,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="tbln" HorizontalAlignment="Right" Height="26" Margin="0,82,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="tbp" HorizontalAlignment="Right" Height="26" Margin="0,113,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="tbad" HorizontalAlignment="Right" Height="26" Margin="0,144,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="tbph" HorizontalAlignment="Right" Height="26" Margin="0,175,21,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="tbcn" HorizontalAlignment="Right" Height="26" Margin="0,206,19,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="tbbn" HorizontalAlignment="Right" Height="26" Margin="0,237,19,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111"/>
+        <ListBox x:Name="listBox" Margin="10,111,242,10"/>
+        <Button x:Name="baddc" Content="Add" HorizontalAlignment="Right" Margin="0,268,60,0" VerticalAlignment="Top" Width="109" Height="26" Click="baddc_Click"/>
+        <Button x:Name="sort" Content="Sort database by last name" HorizontalAlignment="Right" Margin="0,47,524,0" VerticalAlignment="Top" Width="189" Height="26" Click="sort_Click"/>
+        <TextBox x:Name="tbcardnummin" HorizontalAlignment="Left" Height="26" Margin="97,78,0,0" TextWrapping="Wrap" Text="0000000000000000" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="tbcardnummax" HorizontalAlignment="Left" Height="26" Margin="309,78,0,0" TextWrapping="Wrap" Text="9999999999999999" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1_Copy7" Content="Min card num." HorizontalAlignment="Right" Margin="0,78,626,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy8" Content="Max card num." HorizontalAlignment="Right" Margin="0,78,419,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Find" HorizontalAlignment="Left" Height="28" Margin="434,78,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="3.952,1.682" Click="button_Click"/>
+        <ListBox x:Name="listBoxh" HorizontalAlignment="Left" Height="26" Margin="434,20,0,0" VerticalAlignment="Top" Width="31" Visibility="Hidden"/>
+        <Button x:Name="button1" Content="Re" HorizontalAlignment="Left" Margin="465,78,0,0" VerticalAlignment="Top" Width="23" Height="28" Click="button1_Click"/>
+
+    </Grid>
+</Window>
